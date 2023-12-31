@@ -1,0 +1,44 @@
+.custom-width {
+    width: 241px;
+    /* Set your desired width */
+    overflow: hidden;
+    /* Prevent text overflow */
+    white-space: nowrap;
+    /* Prevent text from wrapping */
+    text-overflow: ellipsis;
+    /* Show ellipsis (...) for truncated text */
+}
+
+.custom-margin {
+    margin-top: 12rem;
+}
+
+
+@media only screen and (max-width: 1249px) {
+    .custom-width {
+        max-width: none;
+        /* For smaller screens, remove the max-width */
+        white-space: normal;
+        /* Allow text to wrap for smaller screens */
+        overflow: visible;
+        text-overflow: unset;
+
+    }
+
+    .custom-margin {
+        margin-top: 2rem;
+    }
+
+}
+
+
+@media only screen and (max-width: 999px) {
+    .custom-width {
+        max-width: none;
+        /* For smaller screens, remove the max-width */
+        white-space: normal;
+        /* Allow text to wrap for smaller screens */
+        overflow: visible;
+        text-overflow: unset;
+    }
+}
